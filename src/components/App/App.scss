@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap");
+// font-family: 'Teko', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+// font-family: 'Heebo', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// font-family: 'Work Sans', sans-serif;
+@import '../../styles/breakpoints.scss';
+
+
+
+  $dark :#090C08;
+  $light :#FBFFFE;
+  $lost-highway:#ffcc06;
+  :root{
+    --dark-color: #{$dark};
+    --light-color:#{$light};
+};
+
+body,html{
+  user-select: none;
+  // background:  var(--dark-color);
+  background:  var(--light-color);
+  overscroll-behavior: none;
+  margin: 0;
+  font-family: "Josefin Sans","Work Sans","Heebo","Teko", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+a{
+  text-decoration: none;
+  outline: 1px solid transparent;
+}
+
