@@ -6,12 +6,12 @@
     width: 100%;
     height: 50vh;
     // height: calc(var(--vh,1vh)*50);
-    background-color: var(--dark-color);
 
     .projects-wrapper{
         display: flex;
         box-sizing: border-box;
-        @include media("<=550px"){
+        background-color: var(--dark-color);
+        @include media("<=tablet"){
             flex-direction: column;
         }
 
@@ -19,6 +19,7 @@
             height: 50vh;
             position: relative;
             transition: all .4s ease-in-out;
+            overflow: hidden;
             &:hover{
                 img{
                     opacity: .5;

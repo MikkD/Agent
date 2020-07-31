@@ -7,7 +7,6 @@
     padding: 25px 0px;
     z-index: 4;
     box-sizing: border-box;
-    // border:1px solid gold;
 
     @include media("<=phone"){
         height: 96px;
@@ -17,18 +16,18 @@
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        // border:1px solid gold;
+        z-index: 4;
     .logo{
         a{
-            font-size: 1.2rem;
-            letter-spacing: .5rem;
-            color:var(--dark-color);
-            // background: #{$dark};
-            text-decoration: none;
-            font-weight: 500;
-            font-family: "Teko", "Segoe UI",
+            font-family: "Josefin Sans","Teko", "Segoe UI",
             "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
             "Helvetica Neue", sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: .3rem;
+            text-decoration: none;
+            font-weight: 300;  
+            color:var(--dark-color);
+            // border-bottom: 5px solid blanchedalmond;
         }
     }
     .hamburger-menu{

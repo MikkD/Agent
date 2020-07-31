@@ -32,6 +32,7 @@
     height: 56px;
     position: relative;
     overflow: hidden;
+    
 
     @include media("<=tablet"){
         margin-bottom: 6px;
@@ -44,6 +45,7 @@
     }
     span{
         position: absolute;
+        
     }
 
 }
