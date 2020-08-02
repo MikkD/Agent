@@ -1,0 +1,68 @@
+@import '../../styles/breakpoints.scss';
+
+nav{
+    display: none;
+}
+
+.navigation{
+    height: 80vh;
+    width: 100%;
+    color: var(--light-color);
+    position: fixed;
+    overflow: hidden;
+    background-color: #8a9686;
+    // background-color: var(--dark-color);
+
+    .nav-wrapper{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+    h4{
+        font-size: 2rem;
+        @include media('<=phone'){
+            font-size: 1.6rem;
+        }
+    }
+    ul{
+        padding-top: 40px;
+        @include media('<=phone'){
+            padding-top: 40px;
+        }
+
+    }
+    a{
+        font-size: 4rem;
+        line-height: 4.6rem;
+        letter-spacing: .1rem;
+        color: white;
+        position: relative;
+        @include media('<=phone'){
+            font-size: 2rem;
+            line-height: 2.6rem;
+        }
+
+        &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right:0;
+        width: 0%;
+        height: 2px;
+        margin-bottom: -1px;
+        background-color:var(--light-color) ;
+        transition: all 0.4s ease;
+        }
+        &:hover:after{
+            width: 100%;
+            left: 0;
+            }
+            
+        
+
+
+    }
+    
+    
+}

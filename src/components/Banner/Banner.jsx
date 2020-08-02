@@ -3,12 +3,12 @@ import { ReactComponent as RightArrow } from '../../assets/img/arrow-right.svg';
 import './Banner.scss';
 
 
-export default function Banner({ titleRef }) {
+export default function Banner() {
     return (
         <React.Fragment>
             <div className="banner">
                 <div className="banner-wrapper">
-                    <h2 className="animate-header" ref={titleRef}>
+                    <h2>
                         <div className="line" >
                             <span>Creating unique design</span>
                         </div>
