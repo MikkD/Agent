@@ -26,7 +26,6 @@ function HomePage() {
 
   return (
     <React.Fragment>
-      <Navigation />
       <div className="homePage">
         {!animationIsCompleted ? <HeroOverlay /> : null}
         <Banner />
